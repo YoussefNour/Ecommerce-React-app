@@ -6,3 +6,4 @@ This is a team project assigned to us by ItWorx
 
 - Youssef Ossama
 - Ahmed Gwaily
+- Omar Khaled
