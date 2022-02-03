@@ -35,11 +35,27 @@
   "products": [
     {
       "id": 0,
-      "title": "",
-      "price": 0,
-      "details": "",
+      "title": "Tommy Basic T-shirt",
+      "price": 100,
+      "details": "Tommy T-shirt available in All Colors, 100% Cotton",
       "image": "",
-      "discount": ""
+      "discount": "30%"
+    },
+    {
+      "id": 1,
+      "title": "Gant shirt",
+      "price": 150,
+      "details": "Gant shirt available in All Colors, 100% Cotton",
+      "image": "",
+      "discount": "40%"
+    },
+    {
+      "id": 3,
+      "title": "Nike Running Shoes",
+      "price": 500,
+      "details": "Nike Running Shoes,Lightweight foam midsole for comfortable cushioning,Deep flex grooves allow your foot to move naturally",
+      "image": "",
+      "discount": "0%"
     }
   ]
 }
