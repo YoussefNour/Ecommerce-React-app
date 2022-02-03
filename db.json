@@ -1,6 +1,45 @@
 {
-  "users": [],
-  "orders": [],
-  "admin": [],
-  "products": []
+  "users": [
+    {
+      "id": 0,
+      "name": "",
+      "email": "",
+      "gender": "",
+      "address": "",
+      "password": "",
+      "image": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": 0,
+      "status": "",
+      "userId": "",
+      "username": "",
+      "date": "",
+      "totalPrice": 0,
+      "productList": []
+    }
+  ],
+  "admins": [
+    {
+      "id": 0,
+      "name": "",
+      "email": "",
+      "gender": "",
+      "address": "",
+      "password": "",
+      "image": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "title": "",
+      "price": 0,
+      "details": "",
+      "image": "",
+      "discount": ""
+    }
+  ]
 }
