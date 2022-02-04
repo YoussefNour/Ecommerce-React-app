@@ -1,10 +1,13 @@
 import { combineReducers } from "redux";
-import { GetProducts } from "./Get-Products";
-import { GetProductById } from "./Get-Products-By-Id";
+import { CreateNewProduct } from "./Products/Create-Product";
+import { GetProducts } from "./Products/Get-Products";
+import { GetProductId } from "./Products/Get-Products-By-Id";
+
 
 let rootReducers = combineReducers({
-    productList:GetProducts
-    // productById : GetProductById
+    productList:GetProducts,
+    GetProduct : GetProductId,
+    CreateProduct : CreateNewProduct
 })
 
 export default rootReducers

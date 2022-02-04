@@ -1,40 +1,35 @@
-import { Component } from 'react';
-import { connect } from 'react-redux';
-import  * as actions from '../../Actions/index'
+import { useState } from "react"
 
-class Products extends Component{
-    constructor(props){
-        super(props);
-        this.props.GetAllProducts();
-        this.state={
-        }
+
+export default function Product({productCard}){
+    let[counter,setCounter] = useState(0)
+
+   let increaseCounter=()=>{
+     const c = counter+1;
+    setCounter(c)
     }
 
 
-    refresh=()=>{
-        if(this.props.products){
-           return( this.props.products.map((product)=>{return <div key={product.id}>{product.title}</div>
-            })
-           )
-        }
-        return(
-            <div>No Products</div>
-        )
+    let decreaseCounter=()=>{
+      if(counter >0){
+        const c = counter-1
+        setCounter(c);
+      }
     }
 
-    render(){
-        return(
-            <div>
-                {this.refresh()}
+    return(
+        <div className="card text-center mb-3">
+          <img className="card-img-top" src={productCard.image} alt="productimg"/>
+          <div className="card-body">
+            <h4 className="card-title">{productCard.title}</h4>
+            <p className="card-text">$ {productCard.price}</p>
+            <div className="d-flex justify-content-center">
+                <input className="btn btn-success btn-sm" onClick={()=>increaseCounter()} type='button' value='+'/>
+                <label id="count" className="mx-2">{counter}</label>
+                <input className="btn btn-secondary btn-sm" onClick={()=>decreaseCounter()} type='button' value='-'/>
+                <button className="btn btn-primary mx-2 btn-sm">Add To Card</button>
             </div>
-        )
-    }
+          </div>
+        </div>
+    )
 }
-
-let mapToProps=(state)=>{
-    return{
-        products:state.productList
-    }
-}
-
-export default connect(mapToProps, actions)(Products)
