@@ -8,10 +8,12 @@ function AppRouting() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );

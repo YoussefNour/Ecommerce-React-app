@@ -1,0 +1,13 @@
+nav{
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: -10rem;
+  width: 100%;
+  color: aliceblue;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 0.5rem;
+}
