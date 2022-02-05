@@ -1,11 +1,8 @@
-import './App.css';
+import "./App.css";
+import AppRouting from "./Components/appRouting";
 
 function App() {
-  return (
-    <div className="App">
-        <h1>Hello Team !</h1>
-    </div>
-  );
+  return <AppRouting />;
 }
 
 export default App;
