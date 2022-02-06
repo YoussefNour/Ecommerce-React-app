@@ -35,11 +35,34 @@
   "products": [
     {
       "id": 0,
-      "title": "",
-      "price": 0,
-      "details": "",
-      "image": "",
-      "discount": ""
+      "title": "Tommy Basic T-shirt",
+      "price": 100,
+      "details": "Tommy T-shirt available in All Colors, 100% Cotton",
+      "image": "https://images.ikrix.com/product_images/original/tommy-hilfiger-t-shirts-tommy-flag-hilfiger-t-shirt-in-white-00000231430f00s001.jpg",
+      "discount": "30%"
+    },
+    {
+      "id": 1,
+      "title": "Gant shirt",
+      "price": 150,
+      "details": "Gant shirt available in All Colors, 100% Cotton",
+      "image": "https://www.houseofkids.com/media/catalog/product/cache/1/image/560x/9df78eab33525d08d6e5fb8d27136e95/5/f/5f3277af6669agant-t_shirt-905114-433_0_Front_1_website.jpg",
+      "discount": "40%"
+    },
+    {
+      "id": 2,
+      "title": "Nike Running Shoes",
+      "price": 500,
+      "details": "Nike Running Shoes,Lightweight foam midsole for comfortable cushioning,Deep flex grooves allow your foot to move naturally",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/75a3a609-a2cd-4952-ac58-e53de42ffe48/air-zoom-pegasus-38-younger-older-road-running-shoes-Dfxcxx.png",
+      "discount": "0%"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/lddanijntooidcnakfzc/air-max-excee-mens-shoes-MhJh6v.png",
+      "title": "Airmax Nike shoes",
+      "price": "200",
+      "details": "Airmax Nike shoes\nOriginal\nThe Airmax nike running shoes takes your performance to a new level",
+      "id": 3
     }
   ]
 }
