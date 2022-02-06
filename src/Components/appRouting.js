@@ -12,7 +12,7 @@ function AppRouting() {
       <div className="container">
         <Routes>
           <Route path="/" element={<WelcomePage />} />
-          <Route path="products" element={<Product/>}
+          <Route path="products" element={<Product />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
