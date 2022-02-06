@@ -22,3 +22,16 @@ export async function CreateUser(user){
         }
     )
 }
+
+export async function GetAllUsers(){
+    let payload=[];
+    await fetch(`${URL}users`)
+    .then((res)=>{return res.json()})
+    .then((data)=>payload=data)
+    return(
+        {
+            type:"USERS",
+            payload
+        }) 
+          
+}

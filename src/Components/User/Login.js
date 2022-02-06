@@ -1,15 +1,38 @@
 import { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import {GetAllUsers} from '../../Actions/Users/index'
 
 class Login extends Component {
     constructor(props) {
         super(props)
+        this.props.GetAllUsers();
         this.state = {
-            username: "",
+            email: "",
             password: ""
         }
 
     }
+    changeEmailHandler = (e) => {
+        this.setState({ email: e.target.value })
+    }
+    changePasswordHandler = (e) => {
+        this.setState({ password: e.target.value })
+    }
 
+    login=()=>{
+        
+        let loginUser = {email:this.state.email,password:this.state.password}
+        console.log(loginUser)
+        let allusers = this.props.users;
+        console.log(allusers);
+        let founded = allusers.find(x=>x.email==loginUser.email)
+        console.log(founded)
+        if(founded){
+        }
+        
+        
+    }
     render(){
         return(
             <div>
@@ -30,7 +53,7 @@ class Login extends Component {
                                             type={"password"} value={this.state.password} onChange={this.changePasswordHandler} />
                                     </div>
                                     <br />
-                                    <input type={"button"} value={"Login"} className="btn btn-success" onClick={this.saveUser} />
+                                    <input type={"button"} value={"Login"} className="btn btn-success" onClick={this.login} />
                                 </form>
                             </div>
                         </div>
@@ -40,4 +63,13 @@ class Login extends Component {
         )
     }
 }
-export default Login;
+let mapToAction = (dispatch) => {
+    return (bindActionCreators({GetAllUsers}, dispatch))
+}
+let mapToProps=(state)=>{
+    return{
+        users:state.usersList
+    }
+}
+
+export default connect(mapToProps, mapToAction)(Login)
