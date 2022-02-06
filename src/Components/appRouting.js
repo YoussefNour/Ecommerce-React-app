@@ -4,6 +4,7 @@ import WelcomePage from "./Home/welcomePage";
 import Footer from "./Layout/footer";
 import Header from "./Layout/header";
 import Product from "./Products/Product";
+import Login from "./User/Login";
 import Registration from "./User/Registration";
 
 function AppRouting() {
@@ -16,6 +17,7 @@ function AppRouting() {
           <Route path="products" element={<Product />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="Register" element={<Registration />} />
+          <Route path="Login" element={<Login />} />
         </Routes>
       </div>
       <Footer />
