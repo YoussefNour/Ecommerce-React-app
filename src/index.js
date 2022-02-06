@@ -1,21 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import {Provider} from 'react-redux'
-import { applyMiddleware, createStore } from 'redux';
-import promiseMW from 'redux-promise'
-import rootReducers from './Reducers'
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
-// import 'jquery/dist/jquery'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import App from "./App";
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import promise from "redux-promise";
+import rootReducer from "./reducers";
 
-let CreateStoreWithMiddleWare = applyMiddleware(promiseMW)(createStore)
+const createStoreWithMiddelWare = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
-  <Provider store={CreateStoreWithMiddleWare(rootReducers)}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+  <React.StrictMode>
+    <Provider store={createStoreWithMiddelWare(rootReducer)}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
-
