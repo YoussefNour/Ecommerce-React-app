@@ -2,6 +2,7 @@ import './App.css';
 import NewProduct from './Components/Products/NewProduct';
 import ProductDetails from './Components/Products/ProductDetails';
 import Products from './Components/Products/Products';
+import Registration from './Components/User/Registration'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Products></Products>
         <NewProduct></NewProduct>
         <ProductDetails></ProductDetails>
+        <Registration></Registration>
     </div>
   );
 }

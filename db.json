@@ -8,6 +8,15 @@
       "address": "",
       "password": "",
       "image": ""
+    },
+    {
+      "name": "ahmed",
+      "email": "ah@gmail.com",
+      "gender": "male",
+      "address": "orabi",
+      "password": "123",
+      "image": "url",
+      "id": 1
     }
   ],
   "orders": [
