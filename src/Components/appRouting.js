@@ -4,6 +4,7 @@ import WelcomePage from "./Home/welcomePage";
 import Footer from "./Layout/footer";
 import Header from "./Layout/header";
 import Product from "./Products/Product";
+import Registration from "./User/Registration";
 
 function AppRouting() {
   return (
@@ -14,6 +15,7 @@ function AppRouting() {
           <Route path="/" element={<WelcomePage />} />
           <Route path="products" element={<Product />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="Register" element={<Registration />} />
         </Routes>
       </div>
       <Footer />

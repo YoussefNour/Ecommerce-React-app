@@ -84,6 +84,7 @@ class Registration extends Component {
                                 <input placeholder="Image" name="image" className="form-control"
                                     value={this.state.image} onChange={this.changeImageHandler} />
                             </div>
+                            <br/>
                             <input type={"button"} value={"Register"} className="btn btn-success" onClick={this.saveUser} />
                         </form>
                     </div>
