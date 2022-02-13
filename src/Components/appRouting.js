@@ -11,15 +11,13 @@ function AppRouting() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<WelcomePage />} />
-          <Route path="products" element={<Products />} />
-          <Route path="*" element={<PageNotFound />} />
-          <Route path="Register" element={<Registration />} />
-          <Route path="Login" element={<Login />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="products" element={<Products />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="Register" element={<Registration />} />
+        <Route path="Login" element={<Login />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );

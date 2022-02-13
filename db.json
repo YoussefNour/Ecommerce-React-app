@@ -73,5 +73,22 @@
       "details": "Airmax Nike shoes\nOriginal\nThe Airmax nike running shoes takes your performance to a new level",
       "id": 3
     }
+  ],
+  "carousel": [
+    {
+      "id": 0,
+      "image": "https://picsum.photos/id/10/1080/720",
+      "advert": "Airmax Nike shoes\nOriginal\nThe Airmax nike running shoes takes your performance to a new level"
+    },
+    {
+      "id": 1,
+      "image": "https://picsum.photos/id/11/1080/720",
+      "advert": "Airmax Nike shoes\nOriginal\nThe Airmax nike running shoes takes your performance to a new level"
+    },
+    {
+      "id": 2,
+      "image": "https://picsum.photos/id/12/1080/720",
+      "advert": "Airmax Nike shoes\nOriginal\nThe Airmax nike running shoes takes your performance to a new level"
+    }
   ]
 }
